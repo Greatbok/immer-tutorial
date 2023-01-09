@@ -49,7 +49,7 @@ const App = () => {
     (id) => {
       setData({
         ...data,
-        array: data.array.filter(info => info.id !== id),
+        array: data.array.filter((info) => info.id !== id),
       });
     },
     [data]
@@ -81,7 +81,6 @@ const App = () => {
           ))}
         </ul>
       </div>
-
     </div>
   );
 };
